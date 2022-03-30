@@ -6,13 +6,12 @@ bool Pstring::isPalindrome(std::string word)
 
     // Loop to check if each letter of the word is equal to its 
     // oppisite.
-    for (int i = 0; i < size; ++i)
+    for (int i = 1; i <= size; ++i)
     {
-        int k = i - 1;
-        if (word[i] == word[size - k]) 
+        if (word[i - 1] != word[size - i]) 
         {
-            return true;
+            return false;
         }
     }
-   return false;
+   return true;
 }
