@@ -1,14 +1,16 @@
 #include "Pstring.h"
 
+using namespace std;
+
 int main()
 {
-    string word;
+    std::string word;
     cout << "This is a palindrome-testing program. Enter a string to test: ";
     cin >> word;
 
-    isPalindrome(word);
-/*
-    if (isPalindrome(word) == true)
+    Pstring pally(word);
+
+    if (pally.isPalindrome(word) == true)
     {
         cout << word << " is a palindrome" << endl;
     }
@@ -16,6 +18,6 @@ int main()
     {
         cout << word << " is not a palindrome" << endl;
     }
-    */
+    
     return 0;
 }

@@ -1,22 +1,16 @@
 #include "Pstring.h"
 
-bool isPalindrome(string word)
+bool Pstring::isPalindrome(std::string word)
 {
-    //bool valid;
-    int && size = sizeof(word);
+    
+    int size = word.size();
     for (int i = 0; i < size; ++i)
     {
-        /*
-        if (word[i] == word[sizeof(word) - i]) 
+        int k = i - 1;
+        if (word[i] == word[size - k]) 
         {
-            valid = true;
+            return true;
         }
-        else 
-        {
-            valid = false;
-        }
-        */
-       cout << word[i] << " " << word[size] << endl;
     }
    return false;
 }

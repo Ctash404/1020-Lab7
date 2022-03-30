@@ -3,13 +3,17 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
-
-/*class Pstring : private string
+class Pstring : private std::string
 {
     private:
+        std::string word {""};
+    public:
+        Pstring() = default;
+        Pstring(std::string word) : word{word} {}
+        std::string getWord();
+        
+        bool isPalindrome(std::string word);
+};
 
-};*/
-bool isPalindrome(string word);
 
 #endif
