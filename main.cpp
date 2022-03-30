@@ -1,3 +1,7 @@
+// Programmers: Team 30 - Blake Moore Shaine O'Neal Conner Tash
+// Lab 7
+// Programmer to take a user's string input that and
+// determine if that word is a palindrome. 
 #include "Pstring.h"
 
 using namespace std;
